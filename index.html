@@ -1,0 +1,243 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bulma CSS framework reference sheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    />
+    
+    <link rel="stylesheet" href="assets\styles\Hairdresser.css" />
+    <title>Rocio's Hair and Design</title>
+  </head>
+
+  <!--NAVBAR-->
+  <body>
+    <nav class="navbar">
+      <!-- logo/brand-->
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src= "assets/images/hairdresserLogo.png" alt="#" style="max-height: 40px"/>
+        </a> 
+      <!-- social media links-->
+        <a class="navbar-item" href="#">
+          <a href="https://www.facebook.com/Rocios-Hair-and-Design-439359219782282" class="fa fa-facebook" target="_blank"></a>
+          <!-- <a href="#" class="fa fa-twitter"></a> -->
+          <a href="https://www.instagram.com/rocio_hair_mtz/?hl=en" class="fa fa-instagram" target="_blank"></a>
+          <!--added navbar-burger for mobile cases-->
+          <a role="button" class="navbar-burger navbar-end" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+      </div>
+      <!-- dropdown menu-->
+      <div class="navbar-menu navbar-end" id="navMenu">
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+                Menu
+              </a>
+              <div class="navbar-dropdown is-right">
+                <a class="navbar-item itemScript" href=#aboutMe>
+                  About Me
+                </a>
+                <a class="navbar-item itemScript" href=#prices>
+                  Prices and Services
+                </a>
+                <a class="navbar-item itemScript" href=#contactUs>
+                  Contact Us
+                </a>   
+              </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--DON'T DELETE OR MODIFY, LOCAL STORAGE APPEND-->
+    <div class = "column is-full">
+      <h2 class="hide" id="welcome"> </h2>
+    </div>
+ 
+    <!--ABOUT ME-->
+    <div class="box">
+      <div class = "column is-full">
+        <h2 id="aboutMe">About Me</h2>
+      </div>
+    </div>
+      <!--Hairdresser card-->
+      <div class ="columns">
+        <div class="column card is-one-quarter .card">
+          <div class="card-image">
+            <figure class="image is-square">
+              <img src="assets\images\hairdresserImage.jpg" alt="image of hairdresser">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              Welcome to my page! My name is Rocio and I have been a hairdresser for 27 years!
+              I am looking forward to meeting you and helping you achieve your best hairlook. 
+              I use the best hair products that will leave your hair feeling renewed. 
+              Check out my services below and contact us if you are interested in appointment.
+            </div>
+          </div>
+        </div>
+        <!--Pexel Image Area-->
+        <div class="column">
+          <figure class= "image is-3by4" id="photos0">
+            <img src="https://bulma.io/images/placeholders/256x256.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class= "image is-3by4" id="photos1">
+            <img src="https://bulma.io/images/placeholders/256x256.png">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class= "image is-3by4" id="photos2">
+            <img src="https://bulma.io/images/placeholders/256x256.png">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+
+    <!--TABLE ABOUT PRICES-->
+
+    <div class="column pricesBox">
+      <div class = "column is-full">
+        <h2 id="prices">Prices and Services</h2>
+      </div>
+      <div class="table-container">
+         <table class="table is-striped tableStyle">
+          <!-- Your table content -->
+          <thead class="has-text-centered">
+            <tr>
+              <th>Haircuts</th>
+              <th>Haircolor</th>
+              <th>Highlights</th>
+              <th>Perms and Treatments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Men | Starting at $20</td>
+              <td>Single process color | Starting at $65</td>
+              <td>Partial highlighting | Starting at $85 </td>
+              <td>Body wave perms | starting at $75</td>
+            </tr>
+            <tr>
+              <td>Women | from $25 - $45</td>
+              <td>Fantasty color | starting at $100</td>
+              <td>Full highlighting | starting at $120</td>
+              <td>Spiral perm | starting at $120</td>
+            </tr>
+            <tr>
+              <td>Children | $20 </td>
+              <td>Color correction | starting at $130</td>
+              <td>Balayage specialty color | starting at $130</td>
+              <td>Brazillian blowout | starting at $150</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <!--GOOGLE MAP, tutorial found on https://youtu.be/Zxf1mnP5zcw-->
+    <div>
+      <h2>Find Us!</h2>
+      <p>Click on the pin to open Google Maps!</p>
+    </div>
+    <div class="column is-full mapBox">
+      <div id="map"></div>
+            <!-- Contact Information -->
+      <div class= "box imhere">
+        <a class="headerbtn" href="tel:+5208503208">
+              &#9742 (520) 850-3208
+        </a>
+        <p>
+        VG Beauty Lounge
+        </p>
+        <p>
+        3964 E Pima St. 
+        </p>
+        <p>
+         Tucson, AZ 85712
+         </p>
+      </div>
+      
+    </div>  
+    
+    <!--CONTACT FORM-->
+    <div class="box contactUsBox">
+     <div class="column is-full contact">
+        <h2 id="contactUs">Contact Us</h2>
+      </div>
+      <div class="column is-two-fifths box userInput">
+        <!--Name-->
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input is-info" id="customerName" type="text" placeholder="Your Name">
+          </div>
+        </div>
+
+        <!--Email-->
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input is-info" id="customerEmail" type="email" placeholder="youremail@email.com" value="">
+          </div>
+        </div>
+        
+        <!--Phone Number-->
+        <div class="field">
+          <label class="label">Phone Number</label>
+          <div class="control">
+            <input class="input is-info" id="customerNum" type="tel" placeholder="###-###-####" value="">
+          </div>
+        </div>
+
+        <!--Message-->
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea is-info" id="customerMsg" placeholder="Hello! I would like an appointment..."></textarea>
+          </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" id="submit">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light" id="cancel">Cancel</button>
+          </div>
+        </div>
+
+        <!--Hidden Message Append-->
+        <div class = "column hide" id="thanks">
+              Thank you for signing up, customer! 
+              We will get in touch with you soon.
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+   
+
+    <!--Google Maps script-->
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKTd39XragN38yJdYnY94iX1U9oGf2WyE&callback=initMap">
+    </script>
+
+   <!--Facebook script-->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"> </script>
+
+    <!--Our own script-->
+    <script src= "assets/script/script.js"></script>
+  </body>
+</html>
